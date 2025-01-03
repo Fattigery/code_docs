@@ -29,9 +29,9 @@ pnpm add alova
 			if (contentType.includes("application/json")) {
 				return response.json()
 			} else if (contentType.includes("text/html")) {
-				return response.text() // [!code --]
+				return response.text()
 			} else if (contentType.includes("image/")) {
-				return response.blob() // [!code ++]
+				return response.blob()
 			} else {
 				return response.text()
 			}
@@ -55,10 +55,4 @@ pnpm add alova
 </script>
 ```
 
-<sapn class="marker-text">这里是重重点</sapn>
-
-<sapn class="marker-text">这里是尤雨溪的主页样式，鼠标放在我上面看效果</sapn>
-
 ![示例](/image-20241230233442-co32h25.png)
-
-[123](https://www.bilibili.com/123)
