@@ -9,7 +9,8 @@ export default defineConfig({
 	appearance: "dark", // 默认使用深色主题
 	ignoreDeadLinks: false, // 忽略死链接设置为false
 	lastUpdated: true, //首次配置不会立即生效，需git提交后爬取时间戳
-
+	cleanUrls: true, // 生成的链接是否去掉.html后缀
+	base: "/",
 	// 主题配置
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
