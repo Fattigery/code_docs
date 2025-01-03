@@ -54,7 +54,7 @@
    # 测试 SSH 连接
    ssh -i ~/.ssh/id_rsa root@服务器IP
    # 如果配置正确，应该无需密码直接登录（这里可以基本就可以了）
-   
+
    # 详细验证
    # 使用详细输出模式测试
    ssh -vvv -i ~/.ssh/id_rsa root@服务器IP
@@ -64,18 +64,18 @@
 
 1. 配置 GitHub Secrets
 
-   > 在项目仓库中，导航到 `Settings` -> `Secrets` -> `Actions`，然后点击 `New repository secret`。添加以下 Secrets：
+   > 在项目仓库中，导航到 `Settings` -> `Secrets` -> `Actions`，然后点击 `New repository secret` 。添加以下 Secrets：
 
-   1. `SERVER_SSH_KEY`: SSH 私钥内容（粘贴 base64 编码后的私钥内容）
-   2. `SERVER_HOST`: 你的服务器 IP 地址或域名
-   3. `SERVER_USER`: 用于 SSH 连接的用户名（如 root）
-   4. `SERVER_PORT`: SSH 端口（默认 22）
+   1. `SERVER_SSH_KEY` : SSH 私钥内容（粘贴 base64 编码后的私钥内容）
+   2. `SERVER_HOST` : 你的服务器 IP 地址或域名
+   3. `SERVER_USER` : 用于 SSH 连接的用户名（如 root）
+   4. `SERVER_PORT` : SSH 端口（默认 22）
 
 ### 3. 工作流配置
 
-> 1. 项目根目录下创建一个`.github/workflows/deploy.yml`文件。
+> 1. 项目根目录下创建一个 `.github/workflows/deploy.yml` 文件。
 >
-> 2. 添加以下内容到`deploy.yml`文件：
+> 2. 添加以下内容到 `deploy.yml` 文件：
 
 ```yaml
 # 工作流名称
@@ -89,38 +89,38 @@ on:
 
 # 定义工作流中的作业
 jobs:
-	# 部署作业
+  # 部署作业
   deploy:
   	# 指定运行环境为最新版 Ubuntu
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
 
-		# 定义作业的步骤
+    # 定义作业的步骤
     steps:
-    	# 步骤1：检出代码
+      # 步骤1：检出代码
       - name: Checkout code
         uses: actions/checkout@v2 # 使用官方的 checkout action 克隆仓库代码
 
-			# 步骤2：设置 Node.js 环境
+      # 步骤2：设置 Node.js 环境
       - name: Set up Node.js
         uses: actions/setup-node@v2 # 使用官方的 setup-node action
         with:
           node-version: "22" # 指定 Node.js 版本
 
-			# 步骤3：安装 pnpm 包管理器
+      # 步骤3：安装 pnpm 包管理器
       - name: Install pnpm
         uses: pnpm/action-setup@v2 # 使用官方的 pnpm action
         with:
           version: 9 # 指定 pnpm 版本
 
-			# 步骤4：安装项目依赖
+      # 步骤4：安装项目依赖
       - name: Install dependencies
         run: pnpm install # 使用 pnpm 安装项目依赖
 
-			# 步骤5：构建项目
+      # 步骤5：构建项目
       - name: Build project
         run: pnpm docs:build # 执行构建命令，生成静态文件
 
- 			# 步骤6：部署到服务器
+      # 步骤6：部署到服务器
       - name: Deploy
       	# 设置环境变量，从 GitHub Secrets 中获取敏感信息
         env:
@@ -130,10 +130,10 @@ jobs:
           PORT: ${{ secrets.SERVER_PORT }} # SSH 端口号
         # 执行部署脚本
         run: |
-        	# 创建 .ssh 目录
+          # 创建 .ssh 目录
           mkdir -p ~/.ssh
 
-         	# 解码并保存 SSH 私钥
+          # 解码并保存 SSH 私钥
           echo "$SSH_KEY" | base64 -d > ~/.ssh/deploy_key
 
           # 设置私钥文件权限为 600（仅所有者可读写）
@@ -149,15 +149,15 @@ jobs:
           tar -czf project.tar.gz ./*
 
           # 使用 scp 命令将压缩包上传到服务器的 /tmp 目录
-					# -i: 指定私钥文件
-					# -P: 指定 SSH 端口
+          # -i: 指定私钥文件
+          # -P: 指定 SSH 端口
           scp -i ~/.ssh/deploy_key -P $PORT project.tar.gz $USERNAME@$HOST:/tmp/
 
           # 通过 SSH 在服务器上执行命令：
-					# 1. 进入网站目录
-					# 2. 删除原有文件
-					# 3. 解压新上传的文件
-					# 4. 删除临时的压缩包
+          # 1. 进入网站目录
+          # 2. 删除原有文件
+          # 3. 解压新上传的文件
+          # 4. 删除临时的压缩包
           ssh -i ~/.ssh/deploy_key -p $PORT $USERNAME@$HOST "cd /www/wwwroot/code_docs && rm -rf * && tar -xzf /tmp/project.tar.gz && rm /tmp/project.tar.gz"
 ```
 
@@ -179,8 +179,7 @@ jobs:
    - 可以使用原始私钥，无需 Base64 编码
 4. **工作流文件**：
    - 确保分支名称正确
-   - 构建命令与 [package.json](vscode-file://vscode-app/c:/Users/10235/AppData/Local/Programs/Microsoft VS
-     Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html) 中的脚本名称一致
+   - 构建命令与 `package.json` 中的脚本名称一致
    - 部署路径要与服务器实际路径一致
 
 ### 5.验证部署
