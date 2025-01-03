@@ -30,22 +30,17 @@ jobs:
         run: pnpm docs:build
 
       - name: Deploy
-      env:
-        SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
-        HOST: ${{ secrets.SERVER_HOST }}
-        USERNAME: ${{ secrets.SERVER_USER }}
-        PORT: ${{ secrets.SERVER_PORT }}
-      run: |
-        # 设置 SSH
-        mkdir -p ~/.ssh
-        echo "$SSH_KEY" > ~/.ssh/deploy_key
-        chmod 600 ~/.ssh/deploy_key
-
-        # 添加服务器到已知主机
-        ssh-keyscan -H $HOST >> ~/.ssh/known_hosts
-
-        # 打包并部署
-        cd .vitepress/dist
-        tar -czf project.tar.gz ./*
-        scp -i ~/.ssh/deploy_key -P $PORT project.tar.gz $USERNAME@$HOST:/tmp/
-        ssh -i ~/.ssh/deploy_key -p $PORT $USERNAME@$HOST "cd /www/wwwroot/code_docs && rm -rf * && tar -xzf /tmp/project.tar.gz && rm /tmp/project.tar.gz"
+        env:
+          SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          HOST: ${{ secrets.SERVER_HOST }}
+          USERNAME: ${{ secrets.SERVER_USER }}
+          PORT: ${{ secrets.SERVER_PORT }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H $HOST >> ~/.ssh/known_hosts
+          cd .vitepress/dist
+          tar -czf project.tar.gz ./*
+          scp -i ~/.ssh/deploy_key -P $PORT project.tar.gz $USERNAME@$HOST:/tmp/
+          ssh -i ~/.ssh/deploy_key -p $PORT $USERNAME@$HOST "cd /www/wwwroot/code_docs && rm -rf * && tar -xzf /tmp/project.tar.gz && rm /tmp/project.tar.gz"
