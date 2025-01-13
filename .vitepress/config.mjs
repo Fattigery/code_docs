@@ -1,9 +1,10 @@
-import { defineConfig } from "vitepress"
-import { nav } from "./configs/index.js"
+import { defineConfig } from "vitepress";
+import { nav } from "./configs/index.js";
+import { sidebar } from "./configs/index.js";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	title: "VitePress",
+	title: "一丝一缕的在线文档",
 	description: "一丝一缕的在线文档",
 	srcDir: "docs", // 指定文档目录
 	appearance: "dark", // 默认使用深色主题
@@ -11,6 +12,7 @@ export default defineConfig({
 	lastUpdated: true, //首次配置不会立即生效，需git提交后爬取时间戳
 	cleanUrls: true, // 生成的链接是否去掉.html后缀
 	base: "/",
+
 	// 主题配置
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
@@ -30,21 +32,12 @@ export default defineConfig({
 		outline: {
 			level: [2, 4], // 显示2-4级标题
 			// level: 'deep', // 显示2-6级标题
-			label: "当前页大纲", // 文字显示
+			label: "页面导航", // 文字显示
 		},
 		// 导航栏
 		nav,
-
-		// sidebar: [
-		// 	{
-		// 		text: "Examples",
-		// 		items: [
-		// 			{ text: "Markdown Examples", link: "/markdown-examples" },
-		// 			{ text: "Runtime API Examples", link: "/api-examples" },
-		// 		],
-		// 	},
-		// ],
-
+		// 侧边栏
+		sidebar,
 		socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
 	},
 	//markdown配置
@@ -55,4 +48,9 @@ export default defineConfig({
 		},
 		lineNumbers: true,
 	},
-})
+	vite: {
+		// https://cn.vitejs.dev/config/shared-options.html#publicdir
+		publicDir: "../public", // 指定 public 目录路径
+		envDir: "../env",
+	},
+});

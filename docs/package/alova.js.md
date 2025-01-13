@@ -24,35 +24,37 @@ pnpm add alova
 		requestAdapter: alovaFetch(),
 		responded: (response) => {
 			// 检查响应对象的Content-Type头信息来判断应该调用哪个方法来解析数据
-			const contentType = response.headers.get("content-type")
+			const contentType = response.headers.get("content-type");
 
 			if (contentType.includes("application/json")) {
-				return response.json()
+				return response.json();
 			} else if (contentType.includes("text/html")) {
-				return response.text()
+				return response.text();
 			} else if (contentType.includes("image/")) {
-				return response.blob()
+				return response.blob();
 			} else {
-				return response.text()
+				return response.text();
 			}
 		},
-	})
+	});
 
 	// 获取
-	;(async () => {
-		let data = await alovaInstance.Get("http://8.152.201.135:5001/users")
-		console.log(data)
-	})()
+	(async () => {
+		let data = await alovaInstance.Get("http://8.152.201.135:5001/users");
+		console.log(data);
+	})();
 
 	// 添加
-	;(async () => {
+	(async () => {
 		let data = await alovaInstance.Post("http://8.152.201.135:5001/addUser", {
 			username: "admin1",
 			password: "admin2",
-		})
-		console.log(data)
-	})()
+		});
+		console.log(data);
+	})();
 </script>
 ```
 
-![示例](/image-20241230233442-co32h25.png)
+<!-- ![示例](/image-20241230233442-co32h25.png) -->
+
+![](https://zq-assets-store.oss-cn-beijing.aliyuncs.com/imgs/image-20241230233442-co32h25.png)

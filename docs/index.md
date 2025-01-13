@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "一丝一缕"
   text: "一丝一缕的在线文档"
-  tagline: My great project tagline
+  tagline:
   actions:
     - theme: brand
       text: Markdown Examples
