@@ -1,0 +1,20 @@
+/* 修改网站默认样式 */
+
+/* 宽屏 */
+:root {
+	--vp-layout-max-width: 100%;
+}
+
+.VPDoc.has-aside .content-container {
+	max-width: 100% !important;
+}
+
+@media (min-width: 1440px) {
+	.VPDoc:not(.has-sidebar) .container {
+		max-width: 100% !important;
+	}
+
+	.VPDoc:not(.has-sidebar) .content {
+		max-width: 100% !important;
+	}
+}

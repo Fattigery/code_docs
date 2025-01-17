@@ -19,6 +19,10 @@ export const nav = [
 		text: "目标",
 		link: "/project",
 	},
+	{
+		text: "杂记",
+		link: "/notes",
+	},
 	// 分组导航示例
 	{
 		text: "指南",

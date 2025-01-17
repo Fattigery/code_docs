@@ -1,10 +1,9 @@
-/* .vitepress/theme/style/link.css */
-
-/* YouTube */
-.vp-doc a[href^="https://www.youtube.com/"]:before
+/* 链接图标 */
+.vp-doc a[href^="http://"]:before,
+.vp-doc a[href^="https://"]:before
 {
 	content: "";
-	background-image: url(../../svg/youtube.svg);
+	background-image: url(../../svg/default.svg);
 	width: 20px;
 	height: 20px;
 	display: inline-block;
@@ -12,6 +11,12 @@
 	position: relative;
 	background-size: cover;
 	margin-right: 4px;
+}
+
+/* YouTube */
+.vp-doc a[href^="https://www.youtube.com/"]:before
+{
+	background-image: url(../../svg/youtube.svg);
 }
 
 /* 哔哩哔哩 */

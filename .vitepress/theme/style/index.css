@@ -1,5 +1,12 @@
-@import url(./var.css);
 @import url(./rainbow.css);
 @import url(./blur.css);
+/* 链接图标 */
 @import url(./link.css);
+/* marker-text类名的高亮效果 */
 @import url(./marker.css);
+/* 图片样式 */
+@import url(./img.css);
+/* 图片放大 */
+@import url(./img_zoom.css);
+/* 修改vitePress默认样式 */
+@import url(./change.css);
