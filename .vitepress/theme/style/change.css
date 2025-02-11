@@ -18,3 +18,11 @@
 		max-width: 100% !important;
 	}
 }
+
+/* 代码块缩进 4 -> 2 */
+.vp-doc [class*="language-"] pre,
+.vp-doc [class*="language-"] code {
+	tab-size: 2;
+}
+
+/* 代码块字体 */

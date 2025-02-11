@@ -46,6 +46,7 @@ export default defineConfig({
 			// 开启图片懒加载
 			lazyLoading: true,
 		},
+		// 代码块展示行号
 		lineNumbers: true,
 	},
 	vite: {

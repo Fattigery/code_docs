@@ -1,0 +1,8 @@
+:root {
+	--vp-font-family-base: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol", "Noto Color Emoji";
+	/* 行内代码、代码块字体 */
+	--vp-font-family-mono: "Jetbrains Mono", "Fira Code", "HarmonyOS Sans SC", "PingFang SC", "Menlo", "Monaco",
+		"Consolas", "Liberation Mono", "Courier New", monospace;
+	font-optical-sizing: auto;
+}

@@ -1,0 +1,91 @@
+/* 链接图标默认都有的样式 */
+.vp-doc a[href^="http://"]:before,
+.vp-doc a[href^="https://"]:before
+{
+	content: "";
+	/* background-image: url(../../svg/default.svg); */
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 4px;
+}
+
+/* 对于没有匹配到的去除样式 */
+.vp-doc a[href^="http://"]:before,
+.vp-doc a[href^="https://"]:before
+{
+	width: 0;
+	height: 0;
+	margin-right: 0;
+}
+
+/*
+微信公众号
+哔哩哔哩
+YouTube
+知乎
+掘金
+CSDN
+简书
+博客园
+*/
+
+/* YouTube */
+.vp-doc a[href^="https://www.youtube.com/"]:before
+{
+	background-image: url(../../svg/youtube.svg);
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+}
+
+/* 哔哩哔哩 */
+.vp-doc a[href^="https://www.bilibili.com/"]:before,
+.vp-doc a[href^="https://space.bilibili.com/"]:before
+{
+	background-image: url(../../svg/bilibili.svg);
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+}
+
+/* 小红书 */
+.vp-doc a[href^="https://www.xiaohongshu.com/"]:before
+{
+	background-image: url(../../svg/xiaohongshu.svg);
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+}
+
+/* 掘金 */
+.vp-doc a[href^="https://juejin.cn/"]:before
+{
+	background-image: url(../../svg/juejin.svg);
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+}
+
+/* vscode */
+.vp-doc a[href^="https://code.visualstudio.com/"]:before
+{
+	background-image: url(../../svg/vscode.svg);
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+}
+
+/* 语雀 */
+.vp-doc a[href^="https://www.yuque.com/"]:before
+{
+	background-image: url(../../svg/yuque.svg);
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+}

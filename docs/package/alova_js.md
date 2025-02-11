@@ -55,6 +55,4 @@ pnpm add alova
 </script>
 ```
 
-<!-- ![示例](/image-20241230233442-co32h25.png) -->
-
-![](https://zq-assets-store.oss-cn-beijing.aliyuncs.com/imgs/image-20241230233442-co32h25.png)
+![](https://zq-assets-store.oss-cn-beijing.aliyuncs.com/imgs/20250123170008128.png)
