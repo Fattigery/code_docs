@@ -6,7 +6,8 @@
 
 ## 部署：GitHub Actions 自动部署 VitePress 文档
 
-> 这里我使用的是 github action 部署到我自己的服务器，这样的话，当我将代码提交到 github 的时候，就可以自动部署到我的服务器了。
+> 这里我使用的是 github action 部署到我自己的服务器，这样的话，当我将代码提交到 github 的时候，就可以自动部署到我的服务
+> 器了。
 
 ### 1. 前期准备
 
@@ -204,6 +205,16 @@ location ~* \.(html|js)$ {
 }
 ```
 
+## vitePress 博客参考
+
+[李钟意讲前端](https://docs.ffffee.com/)
+
+### 图片点击放大
+
+[https://squid-xu.github.io/blog/vitepress/basics/No1.html](https://squid-xu.github.io/blog/vitepress/basics/No1.html)
+
+[https://www.shakecode.com/zh/blog/other/vitepress-plugin-image-viewer](https://www.shakecode.com/zh/blog/other/vitepress-plugin-image-viewer)
+
 ## 其他
 
-- <sapn class="marker-text">添加`marker-text`类名会有这个效果</sapn>
+- <sapn class="marker-text">添加`marker-text`类名就会有这个效果</sapn>

@@ -1,17 +1,16 @@
 export const nav = [
 	// { text: "Home", link: "/" },
 	{ text: "Examples", link: "/markdown-examples" },
-	{ text: "guide", link: "/guide" },
 	{
 		text: "前端",
 		link: "/qianduan",
 	},
 	{
-		text: "各种库的使用",
+		text: "技术栈",
 		items: [
 			{
 				text: "alova.js",
-				link: "/package/alova_js",
+				link: "/jishuzhan/alova_js",
 			},
 		],
 	},
@@ -42,16 +41,7 @@ export const nav = [
 	},
 	{
 		text: "计划",
-		link: "/plan",
-	},
-	{
-		text: "杂记",
-		items: [
-			{
-				text: "vitePress",
-				link: "/notes/vitePress",
-			},
-		],
+		link: "/todo",
 	},
 	// 分组导航示例
 	{

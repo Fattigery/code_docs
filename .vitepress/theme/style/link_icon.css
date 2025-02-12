@@ -26,10 +26,7 @@
 
 /*
 微信公众号
-哔哩哔哩
-YouTube
 知乎
-掘金
 CSDN
 简书
 博客园
@@ -85,6 +82,24 @@ CSDN
 .vp-doc a[href^="https://www.yuque.com/"]:before
 {
 	background-image: url(../../svg/yuque.svg);
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+}
+
+/* CSDN */
+.vp-doc a[href^="https://blog.csdn.net/"]:before
+{
+	background-image: url(../../svg/csdn.svg);
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+}
+
+/* 微信公众号 */
+.vp-doc a[href^="https://mp.weixin.qq.com/"]:before
+{
+	background-image: url(../../svg/weixin.svg);
 	width: 20px;
 	height: 20px;
 	margin-right: 4px;
