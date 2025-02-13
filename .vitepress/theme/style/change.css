@@ -26,3 +26,15 @@
 }
 
 /* 代码块字体 */
+
+/* 禁用代码块中的连字 */
+/*
+说明：
+font-variant-ligatures: none：直接关闭所有连字效果。
+font-feature-settings: "liga" 0：针对 OpenType 字体（如 JetBrains Mono）禁用连字特性。
+*/
+.vp-doc pre,
+.vp-doc code {
+	font-variant-ligatures: none;
+	font-feature-settings: "liga" 0;
+}

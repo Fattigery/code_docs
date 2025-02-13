@@ -218,3 +218,4 @@ location ~* \.(html|js)$ {
 ## 其他
 
 - <sapn class="marker-text">添加`marker-text`类名就会有这个效果</sapn>
+- [vitePress 图表插件文档](https://github.com/vuesence/vitepress-plugin-diagrams/blob/main/README.zh.md)

@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { nav } from "./configs/index.js";
 import { sidebar } from "./configs/index.js";
+import { configureDiagramsPlugin } from "vitepress-plugin-diagrams";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -48,6 +49,15 @@ export default defineConfig({
 		},
 		// 代码块展示行号
 		lineNumbers: true,
+
+		config: (md) => {
+			// 图表插件
+			// https://github.com/vuesence/vitepress-plugin-diagrams/blob/main/README.zh.md
+			configureDiagramsPlugin(md, {
+				diagramsDir: "public/diagrams", // 可选：自定义 SVG 文件目录
+				publicPath: "/diagrams", // 可选：自定义公共路径
+			});
+		},
 	},
 	vite: {
 		// https://cn.vitejs.dev/config/shared-options.html#publicdir

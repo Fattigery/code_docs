@@ -22,12 +22,12 @@ export const nav = [
 				link: "/tools/vitepress",
 			},
 			{
-				text: "cursor",
-				link: "/tools/cursor",
-			},
-			{
 				text: "vscode",
 				link: "/tools/vscode",
+			},
+			{
+				text: "cursor",
+				link: "/tools/cursor",
 			},
 			{
 				text: "Emmet语法",
@@ -36,6 +36,14 @@ export const nav = [
 			{
 				text: "MarkDown语法",
 				link: "/tools/markdown",
+			},
+			{
+				text: "apifox",
+				link: "/tools/apifox",
+			},
+			{
+				text: "github copilot",
+				link: "/tools/github copilot",
 			},
 		],
 	},
