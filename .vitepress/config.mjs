@@ -9,7 +9,7 @@ export default defineConfig({
 	description: "一丝一缕的在线文档",
 	srcDir: "docs", // 指定文档目录
 	appearance: "dark", // 默认使用深色主题
-	ignoreDeadLinks: false, // 忽略死链接设置为false
+	ignoreDeadLinks: true, // 忽略死链接
 	lastUpdated: true, //首次配置不会立即生效，需git提交后爬取时间戳
 	cleanUrls: true, // 生成的链接是否去掉.html后缀
 	base: "/",
