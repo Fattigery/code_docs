@@ -205,15 +205,43 @@ location ~* \.(html|js)$ {
 }
 ```
 
-## vitePress 博客参考
+## vitePress 参考博客
 
-[李钟意讲前端](https://docs.ffffee.com/)
+### vitePress 优化
+
+[李钟意讲前端](https://docs.ffffee.com/vitepress/vitepress-advanced-guide.html)
+
+[VitePress 不完全优化指南 | 纸鹿摸鱼处](https://blog.zhilu.cyou/2024/vitepress-enhancement)
+
+[Markdown 最全扩展语法示例](https://note.weizwz.com/vitepress/extend/markdown-examples.html)
+
+[【🔥 持续更新】 VitePress 资源推荐](https://theme.sugarat.top/recommend.html)
+
+[VitePress 美化](https://swkende.github.io/swkende-doc/01_VitePress/02_VitePress%E7%BE%8E%E5%8C%96.html)
+
+[中文独立博客列表](https://mengbooo.github.io/BemoDB/posts/annals/2024.html)
+
+[VitePress 搭建并部署网站](https://blog.bugdesigner.cn/vitepress%e6%90%ad%e5%bb%ba%e5%b9%b6%e9%83%a8%e7%bd%b2%e7%bd%91%e7%ab%99/)
+
+[vitepress 从 0 到 1，让每个前后端小伙伴都拥有一个属于自己的博客](https://developer.aliyun.com/article/1614920)
+
+[四万字符数带你使用 Vitepress 构建博客并部署到 github 平台 - 日升\_rs - SegmentFault 思否](https://segmentfault.com/a/1190000044948735#item-5-22)
 
 ### 图片点击放大
 
 [https://squid-xu.github.io/blog/vitepress/basics/No1.html](https://squid-xu.github.io/blog/vitepress/basics/No1.html)
 
 [https://www.shakecode.com/zh/blog/other/vitepress-plugin-image-viewer](https://www.shakecode.com/zh/blog/other/vitepress-plugin-image-viewer)
+
+### 前端技术
+
+[Promise 并发控制](https://tsinghua-lau.github.io/forDocs/studyCn/Javascript/Promise.html)
+
+[Vue 开发调试](https://muyacode.github.io/FrontEndLearnNotes/Document/DevDebug/Vue%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95)
+
+[Web 前端学习笔记](https://welives.github.io/blog/front-end/)
+
+[前端开发规范](https://jinxi1334640772.github.io/tools/stardard/vscode.html)
 
 ## 其他
 
