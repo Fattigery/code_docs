@@ -47,6 +47,12 @@ _斜体_
 
 ![image-20250213100054093](https://zq-assets-store.oss-cn-beijing.aliyuncs.com/imgs/20250213100054179.png)
 
+## 段落、换行
+
+> 要创建段落，使用空行分隔一行或多行文本即可。
+
+> 要创建换行符，使用`<br/>`即可。
+
 ## 有序、无序列表和任务列表
 
 - 列表：
@@ -73,7 +79,7 @@ _斜体_
 
 ![image-20250213104354355](https://zq-assets-store.oss-cn-beijing.aliyuncs.com/imgs/20250213104354412.png)
 
-### 引用块
+## 引用块
 
 > 在段落前添加一个大于符号（>）创建引用块。
 
@@ -121,7 +127,7 @@ _斜体_
 
 ![image-20250213104552000](https://zq-assets-store.oss-cn-beijing.aliyuncs.com/imgs/20250213104552032.png)
 
-### 代码块
+## 代码块
 
 > 行内代码：使用单个反引号包裹代码块。
 >
@@ -137,9 +143,9 @@ console.log(a + b);
 ```
 ~~~
 
-### 插入链接
+## 插入链接
 
-> 写一个[]()，在方括号内书写链接描述，在圆括号内书写链接地址。
+> 写一个`[]()`，在方括号内书写链接描述，在圆括号内书写链接地址。
 
 ```html
 <!-- 
@@ -153,7 +159,7 @@ console.log(a + b);
 [百度一下](https://www.baidu.com)
 
 <!--
-为链接添加title：在URL后使用引号包裹的文本就是title
+为链接添加title：在URL后使用引号包裹的文本就是title，当鼠标悬浮时会显示
 -->
 [百度一下](https://www.baidu.com "百度一下，你就知道")
 
@@ -166,7 +172,7 @@ console.log(a + b);
 
 ![image-20250213104747553](https://zq-assets-store.oss-cn-beijing.aliyuncs.com/imgs/20250213104747597.png)
 
-### 插入图片
+## 插入图片
 
 > 写一个`![]()`，在方括号内书写图片的`alt`，在圆括号内书写图片的地址和图片的`title`。
 
@@ -183,13 +189,13 @@ md语法：![图片alt](图片地址 "图片title")
 <img src="图片地址" alt="图片说明" />
 
 <!--
-链接图片，需要将插入图片的MarkDown写在括号中，然后将链接添加到括号中。
+链接图片：需要将插入图片的MarkDown写在括号中，然后将链接添加到括号中。
 其实就是插入链接与插入图片的语法结合。
 -->
 [![百度一下](./logo.png)](https://www.baidu.com)
 ```
 
-### 插入表格
+## 插入表格
 
 > 使用竖线（|）分隔单元格，并使用短划线（-）表示表头和表体的分隔线。
 >
@@ -204,11 +210,11 @@ md语法：![图片alt](图片地址 "图片title")
 
 ![image-20250213105239662](https://zq-assets-store.oss-cn-beijing.aliyuncs.com/imgs/20250213105239688.png)
 
-### 进阶语法
+## 进阶语法
 
 [MarkDown 从入门 到 精通，完整版图文教程 | arry老师的博客-艾编程](https://www.arryblog.com/guide/html5/markdown.html#三、markdown-进阶语法)
 
-### 画图
+## 画图
 
 [markdown中流程图、时序图、状态图、类图（UML）语法教程 - 喵师傅 - 博客园](https://www.cnblogs.com/wywblogs/articles/17811904.html)
 
