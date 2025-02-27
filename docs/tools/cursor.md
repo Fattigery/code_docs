@@ -14,6 +14,8 @@ https://pjd06mek3n.feishu.cn/docx/Fkojd509co99eqxyS2hc5v3nnHb
 
 [cursor 文档](https://docs.cursor.com/context/@-symbols/@-codebase)
 
+[前端初次使用 Cursor 的必学技巧](https://juejin.cn/post/7474642997488287780)
+
 ## 提示语
 
 [该网站已经写好了一些提示语，在接下来写代码的过程中，cursor 会遵循这些规则](https://cursor.directory/)
@@ -26,17 +28,17 @@ https://pjd06mek3n.feishu.cn/docx/Fkojd509co99eqxyS2hc5v3nnHb
 
 [Cursor 常用快捷键大全 ❗️ 超详细，🐴 住 - 小红书](https://www.xiaohongshu.com/explore/67502a8800000000070368fd?xsec_token=ABCGJ96O0-T9xVyv2xDeVOplEuqRQiDTJs7QNnugAiBJw=&xsec_source=pc_collect)
 
-`ctrl+shift+i`：打开 composer
+`ctrl+shift+i` ：打开 composer
 
-`ctrl+shift+J`：打开配置
+`ctrl+shift+J` ：打开配置
 
-`ctrl+k`：对选择的代码进行分析
+`ctrl+k` ：对选择的代码进行分析
 
-`ctrl+i`：对整个文件进行分析
+`ctrl+i` ：对整个文件进行分析
 
-`ctrl+L`：打开 chat
+`ctrl+L` ：打开 chat
 
-`@codebase`：扫描代码库
+`@codebase` ：扫描代码库
 
 ## cursor 使用技巧
 

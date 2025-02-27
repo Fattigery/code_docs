@@ -22,6 +22,10 @@ export const nav = [
 				link: "/tools/vitepress",
 			},
 			{
+				text: "AI工具",
+				link: "/tools/ai",
+			},
+			{
 				text: "vscode",
 				link: "/tools/vscode",
 			},
