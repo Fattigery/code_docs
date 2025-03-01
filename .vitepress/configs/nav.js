@@ -18,36 +18,47 @@ export const nav = [
 		text: "工具",
 		items: [
 			{
-				text: "VitePress",
-				link: "/tools/vitepress",
+				text: "工具",
+				items: [
+					{
+						text: "VitePress",
+						link: "/tools/vitepress",
+					},
+					{
+						text: "vscode",
+						link: "/tools/vscode",
+					},
+					{
+						text: "apifox",
+						link: "/tools/apifox",
+					},
+				],
+			},
+			{
+				text: "语法",
+				items: [
+					{
+						text: "Emmet语法",
+						link: "/tools/emmet",
+					},
+					{
+						text: "MarkDown语法",
+						link: "/tools/markdown",
+					},
+				],
 			},
 			{
 				text: "AI工具",
-				link: "/tools/ai",
-			},
-			{
-				text: "vscode",
-				link: "/tools/vscode",
-			},
-			{
-				text: "cursor",
-				link: "/tools/cursor",
-			},
-			{
-				text: "Emmet语法",
-				link: "/tools/emmet",
-			},
-			{
-				text: "MarkDown语法",
-				link: "/tools/markdown",
-			},
-			{
-				text: "apifox",
-				link: "/tools/apifox",
-			},
-			{
-				text: "github copilot",
-				link: "/tools/github copilot",
+				items: [
+					{
+						text: "cursor",
+						link: "/tools/cursor",
+					},
+					{
+						text: "github copilot",
+						link: "/tools/github copilot",
+					},
+				],
 			},
 		],
 	},

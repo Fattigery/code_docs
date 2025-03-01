@@ -10,4 +10,6 @@
 /* 图片放大 */
 @import url(./img_zoom.css);
 /* 修改vitePress默认样式 */
-@import url(./change.css);
+@import url(./change_default.css);
+/* 隐藏横条 */
+@import url(./hidden.css);

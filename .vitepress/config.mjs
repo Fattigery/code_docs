@@ -7,12 +7,19 @@ import { configureDiagramsPlugin } from "vitepress-plugin-diagrams";
 export default defineConfig({
 	title: "一丝一缕的在线文档",
 	description: "一丝一缕的在线文档",
+	lang: "zh-CN", // 语言
 	srcDir: "docs", // 指定文档目录
 	appearance: "dark", // 默认使用深色主题
-	ignoreDeadLinks: true, // 忽略死链接
+	ignoreDeadLinks: false, // 忽略死链接
 	lastUpdated: true, //首次配置不会立即生效，需git提交后爬取时间戳
 	cleanUrls: true, // 生成的链接是否去掉.html后缀
 	base: "/",
+	titleTemplate: ":title", // 网页标题模板（:title表示页面标题）
+
+	head: [
+		// fav图标
+		["link", { rel: "icon", href: "/vitepress-logo-mini.svg" }],
+	],
 
 	// 主题配置
 	themeConfig: {
@@ -37,9 +44,21 @@ export default defineConfig({
 		},
 		// 导航栏
 		nav,
-		// 侧边栏
+		// 左侧边栏
 		sidebar,
-		socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
+		// 右侧社交链接
+		socialLinks: [{ icon: "github", link: "https://github.com/" }],
+		// 页脚
+		footer: {
+			message: "Released under the MIT License.",
+			// 自动更新时间
+			copyright: `Copyright © 2024-${new Date().getFullYear()} 备案号：<a href="https://beian.miit.gov.cn/" target="_blank">京****号</a>`,
+		},
+		// 自定义上下页名
+		docFooter: {
+			prev: "上一页",
+			next: "下一页",
+		},
 	},
 	//markdown配置
 	markdown: {
