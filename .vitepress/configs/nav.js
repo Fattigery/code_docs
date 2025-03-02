@@ -1,6 +1,6 @@
 export const nav = [
-	// { text: "Home", link: "/" },
-	{ text: "Examples", link: "/markdown-examples" },
+	{ text: "首页", link: "/" },
+	// { text: "Examples", link: "/markdown-examples" },
 	{
 		text: "前端",
 		link: "/qianduan",

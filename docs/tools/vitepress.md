@@ -6,8 +6,7 @@
 
 ## 部署：GitHub Actions 自动部署 VitePress 文档
 
-> 这里我使用的是 github action 部署到我自己的服务器，这样的话，当我将代码提交到 github 的时候，就可以自动部署到我的服务
-> 器了。
+> 这里我使用的是 github action 部署到我自己的服务器，这样的话，当我将代码提交到 github 的时候，就可以自动部署到我的服务器了。
 
 ### 1. 前期准备
 
@@ -55,7 +54,7 @@
    # 测试 SSH 连接
    ssh -i ~/.ssh/id_rsa root@服务器IP
    # 如果配置正确，应该无需密码直接登录（这里可以基本就可以了）
-
+   
    # 详细验证
    # 使用详细输出模式测试
    ssh -vvv -i ~/.ssh/id_rsa root@服务器IP
@@ -63,14 +62,17 @@
 
 ### 2. GitHub 仓库配置
 
-1. 配置 GitHub Secrets
+**配置 GitHub Secrets**
 
-   > 在项目仓库中，导航到 `Settings` -> `Secrets` -> `Actions`，然后点击 `New repository secret` 。添加以下 Secrets：
+> 在项目仓库中，导航到 `Settings` -> `Secrets` -> `Actions`，然后点击 `New repository secret` 。添加以下 Secrets：
 
-   1. `SERVER_SSH_KEY` : SSH 私钥内容（粘贴 base64 编码后的私钥内容）
-   2. `SERVER_HOST` : 你的服务器 IP 地址或域名
-   3. `SERVER_USER` : 用于 SSH 连接的用户名（如 root）
-   4. `SERVER_PORT` : SSH 端口（默认 22）
+- `SERVER_SSH_KEY` : SSH 私钥内容（粘贴 base64 编码后的私钥内容）
+
+- `SERVER_HOST` : 你的服务器 IP 地址或域名
+
+- `SERVER_USER` : 用于 SSH 连接的用户名（如 root）
+
+- `SERVER_PORT` : SSH 端口（默认 22）
 
 ### 3. 工作流配置
 
@@ -207,7 +209,7 @@ location ~* \.(html|js)$ {
 
 ## vitePress 参考博客
 
-### vitePress 优化
+### vitePress 优化参考
 
 [李钟意讲前端](https://docs.ffffee.com/vitepress/vitepress-advanced-guide.html)
 
@@ -226,6 +228,8 @@ location ~* \.(html|js)$ {
 [vitepress 从 0 到 1，让每个前后端小伙伴都拥有一个属于自己的博客](https://developer.aliyun.com/article/1614920)
 
 [四万字符数带你使用 Vitepress 构建博客并部署到 github 平台 - 日升\_rs - SegmentFault 思否](https://segmentfault.com/a/1190000044948735#item-5-22)
+
+[VitePress搭建 - 哔哩哔哩](https://www.bilibili.com/video/BV1i26tY2EpF?spm_id_from=333.788.player.switch&vd_source=c612b396122ceea23b7f188f9d78ca2a)
 
 ### 图片点击放大
 
