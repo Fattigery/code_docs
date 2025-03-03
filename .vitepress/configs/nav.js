@@ -1,6 +1,10 @@
 export const nav = [
-	{ text: "首页", link: "/" },
+	// { text: "首页", link: "/" },
 	// { text: "Examples", link: "/markdown-examples" },
+	{
+		text: "guide",
+		link: "/guide",
+	},
 	{
 		text: "前端",
 		link: "/qianduan",

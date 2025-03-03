@@ -1,5 +1,5 @@
 export const sidebar = {
-	// 目录1
+	// 前端
 	"/qianduan/": [
 		{
 			text: "测试",
@@ -22,7 +22,7 @@ export const sidebar = {
 		},
 	],
 
-	// 目录2
+	// 技术栈
 	"/jishuzhan/": [
 		{
 			text: "测试2",
@@ -33,6 +33,59 @@ export const sidebar = {
 						{ text: "Markdown Examples", link: "/markdown-examples/Markdown-Examples" },
 						{ text: "Markdown Examples", link: "/markdown-examples/Markdown-Examples" },
 					],
+				},
+			],
+		},
+	],
+
+	// 前端规范
+	"/guide/": [
+		{
+			text: "前端规范",
+			items: [
+				{
+					text: "安装",
+					link: "/guide/lint/installation",
+				},
+				{
+					text: "快速开始(TS配置)",
+					link: "/guide/lint/quickstart",
+				},
+				{
+					text: "eslint集成",
+					link: "/guide/lint/eslintPage",
+				},
+				{
+					text: "prettier集成",
+					link: "/guide/lint/prettierPage",
+				},
+				{
+					text: "ls-lint集成",
+					link: "/guide/lint/lsLintPage",
+				},
+				{
+					text: "stylelint集成",
+					link: "/guide/lint/stylelintPage",
+				},
+				{
+					text: "postcss集成",
+					link: "/guide/lint/postcssPage",
+				},
+				{
+					text: "rimraf快速删除包依赖集成",
+					link: "/guide/lint/rimrafPage",
+				},
+				{
+					text: "git hook拦截commit",
+					link: "/guide/lint/huskyPage",
+				},
+				{
+					text: "commitizen消息助手",
+					link: "/guide/lint/commitizenPage",
+				},
+				{
+					text: "changelog 生成版本记录",
+					link: "/guide/lint/changelogPage",
 				},
 			],
 		},
