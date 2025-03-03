@@ -1,8 +1,21 @@
 :root {
-	--vp-font-family-base: "阿里巴巴普惠体 3.0", "HarmonyOS Sans SC", "霞鹜文楷 GB", "Inter", ui-sans-serif, system-ui,
+	--vp-font-family-base: "霞鹜文楷 GB", "阿里巴巴普惠体 3.0", "HarmonyOS Sans SC", "Inter", ui-sans-serif, system-ui,
 		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	/* 行内代码、代码块字体 */
 	--vp-font-family-mono: "Jetbrains Mono", "Fira Code", "HarmonyOS Sans SC", "PingFang SC", "Menlo", "Monaco",
 		"Consolas", "Liberation Mono", "Courier New", monospace;
-	font-optical-sizing: auto;
+}
+
+body {
+	/* 允许浏览器模拟加粗 */
+	font-synthesis: weight;
+}
+
+/* 修改字体颜色 */
+:root {
+	--vp-c-text-1: rgba(0, 0, 0, 0.9);
+}
+
+.dark {
+	--vp-c-text-1: rgba(255, 255, 255, 0.9);
 }
