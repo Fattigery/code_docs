@@ -8,7 +8,7 @@
 
 [绑定自定义域名至Bucket默认域名](https://help.aliyun.com/zh/oss/user-guide/map-custom-domain-names-5?spm=5176.8465980.console-base_help.dexternal.66401450Bw6nXC#section-rj0-u9x-3ih)
 
-**绑定自定义域名流程参考上述文档中的操作步骤即可。**
+**绑定自定义域名流程参考上述文档中的操作步骤即可。**（其实就是将自定义域名解析到存储桶资源的默认域名上）
 
 然后我们还需要为自定义域名配置SSL证书，否则访问时会提示不安全。[绑定自定义域名的证书托管步骤](https://help.aliyun.com/zh/oss/user-guide/host-ssl-certificates?spm=a2c4g.11186623.0.0.ff563bb9EfReEB#section-evp-h0m-z2e)
 
