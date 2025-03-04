@@ -74,8 +74,16 @@ export const sidebar = {
 					link: "/tools/cursor",
 				},
 				{
+					text: "trae",
+					link: "/tools/trae",
+				},
+				{
 					text: "github copilot",
 					link: "/tools/github copilot",
+				},
+				{
+					text: "其他AI",
+					link: "/tools/other_ai",
 				},
 			],
 		},
