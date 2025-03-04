@@ -25,14 +25,57 @@ export const sidebar = {
 	// 技术栈
 	"/jishuzhan/": [
 		{
-			text: "测试2",
+			text: "alova.js",
+			link: "/jishuzhan/alova_js",
+		},
+	],
+
+	// 工具
+	"/tools/": [
+		{
+			text: "工具",
 			items: [
 				{
-					text: "测试",
-					items: [
-						{ text: "Markdown Examples", link: "/markdown-examples/Markdown-Examples" },
-						{ text: "Markdown Examples", link: "/markdown-examples/Markdown-Examples" },
-					],
+					text: "VitePress",
+					link: "/tools/vitepress",
+				},
+				{
+					text: "vscode",
+					link: "/tools/vscode",
+				},
+				{
+					text: "apifox",
+					link: "/tools/apifox",
+				},
+				{
+					text: "阿里云",
+					link: "/tools/aliyun",
+				},
+			],
+		},
+		{
+			text: "语法",
+			items: [
+				{
+					text: "Emmet语法",
+					link: "/tools/emmet",
+				},
+				{
+					text: "MarkDown语法",
+					link: "/tools/markdown",
+				},
+			],
+		},
+		{
+			text: "AI工具",
+			items: [
+				{
+					text: "cursor",
+					link: "/tools/cursor",
+				},
+				{
+					text: "github copilot",
+					link: "/tools/github copilot",
 				},
 			],
 		},

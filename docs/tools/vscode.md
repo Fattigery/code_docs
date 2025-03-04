@@ -62,7 +62,7 @@
 - Fieetn Code
 - github Colilot
 
-  [Github Copilot 每月试用方案.pdf](/Github%20Copilot.pdf)
+  [Github Copilot 每月试用方案.pdf](https://assets.main.ac.cn/pdfs/Github%20Copilot%E6%AF%8F%E6%9C%88%E8%AF%95%E7%94%A8%E6%96%B9%E6%A1%88.pdf)
 
 ## 代码片段
 

@@ -1,6 +1,6 @@
 # cursor
 
-## 使用参考
+## cursor使用参考
 
 [LookAI - 最专业的 Cursor AI 编程教程](https://www.lookai.top/cn)
 
@@ -16,9 +16,11 @@ https://pjd06mek3n.feishu.cn/docx/Fkojd509co99eqxyS2hc5v3nnHb
 
 [前端初次使用 Cursor 的必学技巧](https://juejin.cn/post/7474642997488287780)
 
-## 提示语
+## Rules提示语
 
-[该网站已经写好了一些提示语，在接下来写代码的过程中，cursor 会遵循这些规则](https://cursor.directory/)
+> 作用：在接下来写代码的过程中，cursor 会遵循这些规则
+
+[Rules提示语网站1_英语](https://cursor.directory/)
 
 在下图框选处进行使用
 
@@ -40,6 +42,10 @@ https://pjd06mek3n.feishu.cn/docx/Fkojd509co99eqxyS2hc5v3nnHb
 
 `@codebase` ：扫描代码库
 
-## cursor 使用技巧
+## cursor 使用
 
 ![](https://zq-assets-store.oss-cn-beijing.aliyuncs.com/imgs/20250211141032936.png)
+
+[Cursor中文使用手册.pdf](https://zq-assets-store.oss-cn-beijing.aliyuncs.com/pdfs/Cursor%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.pdf)
+
+## cursor 实用技巧
