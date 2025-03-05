@@ -2,21 +2,21 @@ export const sidebar = {
 	// 前端
 	"/qianduan/": [
 		{
-			text: "测试",
+			text: "前端",
 			// 设置是否可折叠，默认为true，不可折叠
-			collapsed: false,
+			// collapsed: false,
 			items: [
 				{
-					text: "Index",
-					items: [{ text: "One", link: "/qianduan/one" }],
+					text: "开发技巧 & 知识点  & 思路",
+					link: "/qianduan/trick",
 				},
 				{
-					text: "Two",
-					items: [{ text: "Two", link: "/qianduan/two" }],
-				},
-				{
-					text: "Three",
-					items: [{ text: "Three", link: "/qianduan/three" }],
+					text: "Vue",
+					items: [
+						{
+							text: "代码规范",
+						},
+					],
 				},
 			],
 		},
@@ -82,8 +82,8 @@ export const sidebar = {
 					link: "/tools/github copilot",
 				},
 				{
-					text: "其他AI",
-					link: "/tools/other_ai",
+					text: "DeepSeek",
+					link: "/tools/deepseek",
 				},
 			],
 		},

@@ -1,8 +1,4 @@
-# 其他AI
-
-## 提示词
-
-[Deepseek 万能提问公式：高效获取精准答案](https://juejin.cn/post/7472626857294594100)
+# DeepSeek
 
 ## DeepSeek
 
@@ -13,3 +9,11 @@
 [AI编程狮（AI使用教程）](https://www.gitschool.cn/tutorial)
 
 [DeepSeek教程指南大全，含具体步骤、实战演练、避坑建议 | AI工具集](https://ai-bot.cn/ai-tutorials-deepseek-instruction-manual/)
+
+## 提示词
+
+[Deepseek 万能提问公式：高效获取精准答案](https://juejin.cn/post/7472626857294594100)
+
+## DeepSeek+
+
+### DeepSeek + Kimi
