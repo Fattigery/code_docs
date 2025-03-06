@@ -1,4 +1,4 @@
-# 在 HTML 中使用 alova
+# 在 HTML 中使用 alova.js
 
 ## 步骤
 

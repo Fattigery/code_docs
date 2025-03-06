@@ -11,10 +11,14 @@ export const sidebar = {
 					link: "/qianduan/trick",
 				},
 				{
-					text: "Vue",
+					text: "Vue3开发环境搭建",
 					items: [
 						{
 							text: "代码规范",
+						},
+						{
+							text: "vue3",
+							link: "/qianduan/Vue3开发环境搭建",
 						},
 					],
 				},
